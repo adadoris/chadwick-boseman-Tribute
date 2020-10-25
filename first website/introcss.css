@@ -1,0 +1,97 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    color: #070708;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #fbfbfc;
+}
+.logo-container img {
+    width: 20px;
+    height: 20px;
+    margin: 5px;
+}
+header {
+    display:flex;
+    width: 90%;
+    height: 10vh;
+    margin: auto;
+    align-items: center;
+}
+.logo-container, .navlinks {
+    display: flex;
+}
+.logo-container {
+    flex: 1;
+}
+.logo {
+    font-weight: bold;
+    margin: 5px;
+}
+nav {
+    flex: 4;
+}
+.navlinks {
+    justify-content: space-around;
+    list-style: none;
+}
+.navlink {
+    color:#050507;
+    font-size: 18px;
+    cursor: pointer;
+}
+main {
+    display: inline-block;
+    justify-content: center;
+    text-align: center;
+}
+.salute {
+    display: inline-block;
+    align-items: center;
+    text-align: center;
+    margin-left: 200px;
+    margin-right: auto;
+}
+.slider {
+    width: 800px;
+    height: 440px;
+    margin-left: 250px;
+    margin-right: auto;
+    /*overflow: hidden;
+    text-align: center;*/
+    background: url(chadn1.jpg);
+    animation: slide 30s infinite;
+}
+@keyframes slide {
+    20% {
+        background: url(chadn2.jpeg);
+    }
+    40% {
+        background: url(chadn3.jpg);
+    }
+    60% {
+        background:url(chadn4.jpg);
+    }
+    80% {
+        background: url(chadn5.jpg);
+    }
+    100% {
+        background: url(chadn1.jpg);
+    }
+}
+/*.images {
+    width: 3300px;
+    height: 600px;
+    position: relative;
+    transition: left 2s;
+    -webkit-transition: left 2s;
+    -moz-transition: left 2s;
+    -o-transition: left 2s;
+}*/
+/*.slider_image {
+    float: left;
+    margin: 10px;
+    padding: 0px;
+}*/
